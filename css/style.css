@@ -384,6 +384,7 @@ img {
   display: flex;
 }
 .h3-footer-social-box {
+  margin-bottom: 20px;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.14;
@@ -459,6 +460,9 @@ img {
   cursor: pointer;
 }
 .modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -532,4 +536,193 @@ img {
   height: 4px;
   background-color: var(--brand-color);
   border-radius: 2px;
+}
+.newsletter-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-left: 78px;
+}
+.newsletter-box-item {
+  background: #2f303a;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 16px;
+  color: #ffffff;
+}
+.newsletter-box-item:hover,
+.newsletter-box-item:focus {
+  border: 1px solid var(--brand-color);
+  outline: var(--brand-color);
+}
+.newsletter-text {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-form {
+  display: flex;
+}
+.submit-button {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 108px;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+}
+.submit-button:hover,
+.submit-button:focus {
+  cursor: pointer;
+}
+.submit-button-item {
+  margin-right: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.h3-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  --color1: currentcolor;
+}
+.label-modal:hover,
+.label-modal:focus {
+  outline: var(--brand-color);
+  color: var(--brand-color);
+}
+.label-modal-icon {
+  position: absolute;
+  top: 29px;
+  left: 15px;
+  --color1: currentcolor;
+}
+.modal-icon-box {
+  --color1: currentcolor;
+}
+.modal-icon-box:hover,
+.modal-icon-box:focus,
+.modal-icon-box:checked {
+  color: var(--brand-color);
+  fill: var(--brand-color);
+}
+.label-modal-text {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.label-modal-item {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+}
+.label-modal-item:hover,
+.label-modal-item:focus {
+  outline: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+.textarea-modal {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.textarea-modal:hover,
+.textarea-modal:focus {
+  outline: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+.submit-button-modal {
+  outline: none;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+}
+.submit-button-modal:hover,
+.submit-button-modal:focus {
+  cursor: pointer;
+}
+.submit-button-modal-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.label-checkbox {
+  display: flex;
+  margin-top: 20px;
+}
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 8px;
+}
+.checkbox-text a {
+  color: var(--brand-color);
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+input:hover::placeholder,
+input:focus::placeholder,
+textarea:hover::placeholder,
+textarea:focus::placeholder {
+  color: var(--brand-color);
+}
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-top: 3px;
+  color: rgba(255, 255, 255, 0.6);
 }
