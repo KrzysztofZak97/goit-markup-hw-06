@@ -633,8 +633,7 @@ img {
   --color1: currentcolor;
 }
 .modal-icon-box:hover,
-.modal-icon-box:focus,
-.modal-icon-box:checked {
+.modal-icon-box:focus-within {
   color: var(--brand-color);
   fill: var(--brand-color);
 }
@@ -695,8 +694,24 @@ img {
   color: #ffffff;
 }
 .label-checkbox {
+  position: relative;
   display: flex;
   margin-top: 20px;
+}
+.icon-checkbox {
+  position: absolute;
+  margin-top: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+.checkbox-form {
+  margin-top: 4px;
+  width: 16px;
+  height: 15px;
+}
+.checkbox-form:checked + .icon-checkbox {
+  visibility: visible;
+  opacity: 1;
 }
 .checkbox-text {
   font-weight: 400;
