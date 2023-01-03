@@ -456,7 +456,7 @@
         <div class="footer-social-box">
           <h3 class="h3-footer-social-box">DOŁĄCZ DO NAS</h3>
           <ul class="list-style social-media-box-footer">
-            <li>
+            <li class="footer-list-item">
               <a
                 class="social-media-item social-media-item-icon-footer"
                 href="#"
@@ -466,7 +466,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer-list-item">
               <a
                 class="social-media-item social-media-item-icon-footer"
                 href="#"
@@ -476,7 +476,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer-list-item">
               <a
                 class="social-media-item social-media-item-icon-footer"
                 href="#"
@@ -486,7 +486,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer-list-item">
               <a
                 class="social-media-item social-media-item-icon-footer"
                 href="#"
@@ -498,29 +498,34 @@
             </li>
           </ul>
         </div>
-        <form
-          class="footer-form"
-          name="newsletter"
-          autocomplete="on"
-          novalidate
-        >
-          <label class="newsletter-box" for="user_email">
-            <a class="newsletter-text">Zapisz się do Newslettera</a>
-            <input
-              class="newsletter-box-item"
-              type="email"
-              name="email"
-              id="user_email"
-              placeholder="E-mail"
-            />
-          </label>
-          <button class="submit-button" type="submit">
-            <a class="submit-button-item">Zapisz się</a
-            ><svg width="22px" height="22px">
-              <use href="images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div>
+          <form
+            class="footer-form"
+            name="newsletter"
+            autocomplete="on"
+            novalidate
+          >
+            <h3 class="newsletter-text">Zapisz się do Newslettera</h3>
+            <div class="newsletter-box">
+              <label for="user_email">
+                <input
+                  class="newsletter-box-item"
+                  type="email"
+                  name="email"
+                  id="user_email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="submit-button" type="submit">
+                <a class="submit-button-item">Zapisz się</a
+                ><svg width="22px" height="22px">
+                  <use href="images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -540,6 +545,7 @@
                 name="name"
                 id="user_name"
                 placeholder=""
+                required
               />
             </div>
           </label>
@@ -551,10 +557,11 @@
               <p class="label-modal-text">Telefon</p>
               <input
                 class="label-modal-item"
-                type="tel"
+                type="number"
                 name="tel"
                 id="user_tel"
                 placeholder=""
+                required
               />
             </div>
           </label>
@@ -570,6 +577,7 @@
                 name="email"
                 id="user_email"
                 placeholder=""
+                required
               />
             </div>
           </label>
@@ -582,20 +590,19 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label
-            class="label-checkbox"
-            for="user_
-          statute"
-          >
+          <label class="label-checkbox">
             <input
               class="checkbox-form"
               type="checkbox"
               name="
             statute"
+              required
             />
-            <svg class="icon-checkbox" width="16px" height="14px">
-              <use href="images/icons.svg#icon-check"></use>
-            </svg>
+            <div class="visible-checkbox">
+              <svg class="icon-checkbox" width="16px" height="14px">
+                <use href="images/icons.svg#icon-check"></use>
+              </svg>
+            </div>
             <p class="checkbox-text">
               Oświadczam iż akceptuję <a href="#">Regulamin</a> i
               <a href="#">Politykę Prywatności.</a>
