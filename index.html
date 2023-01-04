@@ -169,7 +169,7 @@
                   <h4 class="specialist-name">John Doe</h4>
                   <a class="specialization-name">Product Designer</a>
                   <ul class="list-style social-media-box">
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -179,7 +179,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item-icon social-media-item"
                         href="#"
@@ -189,7 +189,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -199,7 +199,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -225,7 +225,7 @@
                   <h4 class="specialist-name">John Doe</h4>
                   <a class="specialization-name">Frontend Developer</a>
                   <ul class="list-style social-media-box">
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -235,7 +235,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item-icon social-media-item"
                         href="#"
@@ -245,7 +245,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -255,7 +255,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -281,7 +281,7 @@
                   <h4 class="specialist-name">John Doe</h4>
                   <a class="specialization-name">Marketing</a>
                   <ul class="list-style social-media-box">
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -291,7 +291,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item-icon social-media-item"
                         href="#"
@@ -301,7 +301,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -311,7 +311,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -337,7 +337,7 @@
                   <h4 class="specialist-name">John Doe</h4>
                   <a class="specialization-name">UI designer</a>
                   <ul class="list-style social-media-box">
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -347,7 +347,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item-icon social-media-item"
                         href="#"
@@ -357,7 +357,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -367,7 +367,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="social-media-list">
                       <a
                         class="social-media-item social-media-item-icon"
                         href="#"
@@ -507,19 +507,18 @@
           >
             <h3 class="newsletter-text">Zapisz się do Newslettera</h3>
             <div class="newsletter-box">
-              <label for="user_email">
+              <label>
                 <input
                   class="newsletter-box-item"
                   type="email"
                   name="email"
-                  id="user_email"
                   placeholder="E-mail"
                   required
                 />
               </label>
-              <button class="submit-button" type="submit">
-                <a class="submit-button-item">Zapisz się</a
-                ><svg width="22px" height="22px">
+              <button class="submit-button submit-button-item" type="submit">
+                Zapisz się
+                <svg class="submit-button-icon" width="22px" height="22px">
                   <use href="images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -533,57 +532,54 @@
         <button type="button" class="close-button" data-modal-close>X</button>
         <h3 class="h3-modal">Zostaw swoje dane w formularzu poniżej</h3>
         <form class="modal-form">
-          <label class="label-modal" for="user_name">
-            <div class="modal-icon-box">
+          <label class="label-modal">
+            <span class="modal-icon-box">
               <svg class="label-modal-icon" width="18px" height="18px">
                 <use href="images/icons.svg#icon-person"></use>
               </svg>
-              <p class="label-modal-text">Imie</p>
+              <a class="label-modal-text">Imie</a>
               <input
                 class="label-modal-item"
-                type="name"
+                type="text"
                 name="name"
-                id="user_name"
-                placeholder=""
+                placeholder="Jan"
                 required
               />
-            </div>
+            </span>
           </label>
-          <label class="label-modal" for="user_tel">
-            <div class="modal-icon-box">
+          <label class="label-modal">
+            <span class="modal-icon-box">
               <svg class="label-modal-icon" width="18px" height="18px">
                 <use href="images/icons.svg#icon-phone"></use>
               </svg>
-              <p class="label-modal-text">Telefon</p>
+              <a class="label-modal-text">Telefon</a>
               <input
                 class="label-modal-item"
                 type="tel"
                 name="tel"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                id="user_tel"
                 placeholder="111-111-111"
                 required
               />
-            </div>
+            </span>
           </label>
-          <label class="label-modal" for="user_email">
-            <div class="modal-icon-box">
+          <label class="label-modal">
+            <span class="modal-icon-box">
               <svg class="label-modal-icon" width="18px" height="18px">
                 <use href="images/icons.svg#icon-email"></use>
               </svg>
-              <p class="label-modal-text">Email</p>
+              <a class="label-modal-text">Email</a>
               <input
                 class="label-modal-item"
                 type="email"
                 name="email"
-                id="user_email"
-                placeholder=""
+                placeholder="jankowalski@gmail.com"
                 required
               />
-            </div>
+            </span>
           </label>
-          <label class="label-modal" for="user_coment">
-            <p class="label-modal-text">Komentarz</p>
+          <label class="label-modal">
+            <a class="label-modal-text">Komentarz</a>
             <textarea
               class="textarea-modal"
               name="coment"
@@ -595,22 +591,25 @@
             <input
               class="checkbox-form"
               type="checkbox"
-              name="
-            statute"
+              name="checkbox"
               required
             />
-            <div class="visible-checkbox">
+            <span class="visible-checkbox">
               <svg class="icon-checkbox" width="16px" height="14px">
                 <use href="images/icons.svg#icon-check"></use>
               </svg>
-            </div>
-            <p class="checkbox-text">
-              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-              <a href="#">Politykę Prywatności.</a>
-            </p>
+            </span>
+
+            <span class="checkbox-text"
+              >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności.</a></span
+            >
           </label>
-          <button class="submit-button-modal" type="submit">
-            <a class="submit-button-modal-text">Wyślij</a>
+          <button
+            class="submit-button-modal submit-button-modal-text"
+            type="submit"
+          >
+            Wyślij
           </button>
         </form>
       </div>
